@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .debug{
+        @apply border border-red-600
+    }
+
+    .flex-horizontal{
+        @apply flex flex-row 
+    }
+
+    .flex-vertical{
+        @apply flex flex-col 
+    }
+
+    .shrink{
+        @apply rounded-full shrink-0
+    }
+}
+
+:root{
+
+    color-scheme: light dark;
+    
+    --light-primary-color: #007bff;
+    --light-secondary-color: #6c757d;
+    --light-text-color: #333333;
+    --light-bg-color: #ffffff;
+
+    /* Dark Mode Colors */
+    --dark-primary-color: #0c0c0c;
+    --dark-secondary-color: #121212;
+    --dark-tertiary-color: #171717;
+    --dark-4th-color: #0B1215;
+    --dark-5th-color: #101720;
+    --dark-6th-color: #05091E;
+    --dark-text-color: #ffffff;
+}
+
+html {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+
+    color-scheme: light dark;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #eaeaea;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+/* * {
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} */
+
+/* Hide scrollbar for IE, Edge, and Safari */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
